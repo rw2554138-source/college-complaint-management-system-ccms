@@ -1,0 +1,114 @@
+
+<!-- saved from url=(0067)https://0c26084bc0ff-0af42a6b-5300.ws6.app/proxy/8080/dashboard.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="./admin2_files/bootstrap.min.css" rel="stylesheet">
+<style>.desc-row{display:none; background:#f8f9fa;}.desc-box{padding:15px;}</style>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark"><div class="container"><span class="navbar-brand">CCMS - ADMIN - Admin</span><a href="https://0c26084bc0ff-0af42a6b-5300.ws6.app/proxy/8080/logout.php" class="btn btn-sm btn-light">Logout</a></div></nav>
+<div class="container mt-4">
+<div class="row g-2"><div class="col-3"><div class="card p-2 text-center"><h4>4</h4>Total</div></div><div class="col-3"><div class="card p-2 text-center"><h4>3</h4>Pending</div></div><div class="col-3"><div class="card p-2 text-center"><h4>0</h4>In Progress</div></div><div class="col-3"><div class="card p-2 text-center"><h4>1</h4>Resolved</div></div></div>
+
+<h4 class="mt-4">All Complaints - Admin Only</h4>
+<table class="table table-bordered mt-3"><tbody><tr><th>ID</th><th>Student</th><th>Subject</th><th>Status</th><th>View</th></tr>
+<tr>
+<td>4</td>
+<td>Admin</td>
+<td>seats not available for students in bus</td>
+<td><span class="badge bg-success">Resolved</span></td>
+<td><button onclick="toggleDesc(4)" class="btn btn-sm btn-primary">View</button></td>
+</tr>
+<tr id="d-4" class="desc-row"><td colspan="5"><div class="desc-box">
+<b>ID #4 - seats not available for students in bus</b><br>
+<b>Student:</b> Admin (admin@college.com)<br>
+<b>Category:</b> General | <b>Priority:</b> N/A<br><br>
+<b>Full Description:</b><br>transport<br><br>
+<form method="POST" class="d-flex gap-2 align-items-center">
+  <input type="hidden" name="complaint_id" value="4">
+  <select name="status" class="form-control" style="width:180px;">
+    <option value="Pending">Pending</option>
+    <option value="In Progress">In Progress</option>
+    <option value="Resolved" selected="">Resolved</option>
+  </select>
+  <button type="submit" name="update_status" class="btn btn-success btn-sm">Update Status</button>
+  <button type="button" onclick="toggleDesc(4)" class="btn btn-sm btn-secondary">Close</button>
+</form>
+</div></td></tr>
+<tr>
+<td>3</td>
+<td>Student</td>
+<td>seats not available for students in bus</td>
+<td><span class="badge bg-warning text-dark">Pending</span></td>
+<td><button onclick="toggleDesc(3)" class="btn btn-sm btn-primary">View</button></td>
+</tr>
+<tr id="d-3" class="desc-row" style="display: table-row;"><td colspan="5"><div class="desc-box">
+<b>ID #3 - seats not available for students in bus</b><br>
+<b>Student:</b> Student (student@college.com)<br>
+<b>Category:</b> General | <b>Priority:</b> N/A<br><br>
+<b>Full Description:</b><br>TRANSPORT PROBLEM<br><br>
+<form method="POST" class="d-flex gap-2 align-items-center">
+  <input type="hidden" name="complaint_id" value="3">
+  <select name="status" class="form-control" style="width:180px;">
+    <option value="Pending" selected="">Pending</option>
+    <option value="In Progress">In Progress</option>
+    <option value="Resolved">Resolved</option>
+  </select>
+  <button type="submit" name="update_status" class="btn btn-success btn-sm">Update Status</button>
+  <button type="button" onclick="toggleDesc(3)" class="btn btn-sm btn-secondary">Close</button>
+</form>
+</div></td></tr>
+<tr>
+<td>2</td>
+<td>Student</td>
+<td>seats not available for students in bus</td>
+<td><span class="badge bg-warning text-dark">Pending</span></td>
+<td><button onclick="toggleDesc(2)" class="btn btn-sm btn-primary">View</button></td>
+</tr>
+<tr id="d-2" class="desc-row"><td colspan="5"><div class="desc-box">
+<b>ID #2 - seats not available for students in bus</b><br>
+<b>Student:</b> Student (student@college.com)<br>
+<b>Category:</b> General | <b>Priority:</b> N/A<br><br>
+<b>Full Description:</b><br>TRANSPORT PROBLEM<br><br>
+<form method="POST" class="d-flex gap-2 align-items-center">
+  <input type="hidden" name="complaint_id" value="2">
+  <select name="status" class="form-control" style="width:180px;">
+    <option value="Pending" selected="">Pending</option>
+    <option value="In Progress">In Progress</option>
+    <option value="Resolved">Resolved</option>
+  </select>
+  <button type="submit" name="update_status" class="btn btn-success btn-sm">Update Status</button>
+  <button type="button" onclick="toggleDesc(2)" class="btn btn-sm btn-secondary">Close</button>
+</form>
+</div></td></tr>
+<tr>
+<td>1</td>
+<td>Student</td>
+<td>seats not available for students in bus</td>
+<td><span class="badge bg-warning text-dark">Pending</span></td>
+<td><button onclick="toggleDesc(1)" class="btn btn-sm btn-primary">View</button></td>
+</tr>
+<tr id="d-1" class="desc-row"><td colspan="5"><div class="desc-box">
+<b>ID #1 - seats not available for students in bus</b><br>
+<b>Student:</b> Student (student@college.com)<br>
+<b>Category:</b> General | <b>Priority:</b> N/A<br><br>
+<b>Full Description:</b><br>TRANSPORT PROBLEM<br><br>
+<form method="POST" class="d-flex gap-2 align-items-center">
+  <input type="hidden" name="complaint_id" value="1">
+  <select name="status" class="form-control" style="width:180px;">
+    <option value="Pending" selected="">Pending</option>
+    <option value="In Progress">In Progress</option>
+    <option value="Resolved">Resolved</option>
+  </select>
+  <button type="submit" name="update_status" class="btn btn-success btn-sm">Update Status</button>
+  <button type="button" onclick="toggleDesc(1)" class="btn btn-sm btn-secondary">Close</button>
+</form>
+</div></td></tr>
+</tbody></table>
+</div>
+<script>
+function toggleDesc(id){
+  var el = document.getElementById('d-'+id);
+  el.style.display = el.style.display === 'table-row'? 'none' : 'table-row';
+}
+</script>
+</body></html>
